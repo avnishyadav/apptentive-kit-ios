@@ -142,7 +142,7 @@ class MessageManager {
         let oldUnreadCount = self.unreadMessageCount
         self.setUnreadMessageCount()
 
-        return self.unreadMessageCount > oldUnreadCount
+        return self.unreadMessageCount >= 0
     }
 
     func setAutomatedMessageBody(_ body: String?) {
